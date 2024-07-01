@@ -1,0 +1,974 @@
+<html>
+<head>
+<title>English Language Teaching Material Development - Vol 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); 
+height:3000vh; }
+
+.p{text-align: center; font-size: 33px;}
+.p1 {font-size: 30px;}
+
+
+
+
+
+.container {
+            padding-top: 20%;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            
+        }
+ 
+        .container span {
+            display: block;
+        }
+ 
+        .text1 {
+            color: tomato;
+            font-size: 70px;
+            font-weight: 700;
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+            background: #F1F7ED;
+            position: relative;
+            animation: text 3s 1;
+
+}
+ 
+        .text2 {
+            font-size: 30px;
+            color: tomato;
+            font-family: Georgia, serif;
+        }
+ 
+        @keyframes text {
+            0% {
+                color: black;
+                margin-bottom: -40px;
+            }
+ 
+            30% {
+                letter-spacing: 25px;
+                margin-bottom: -40px;
+            }
+ 
+            85% {
+                letter-spacing: 8px;
+                margin-bottom: -40px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttons{padding:10px; box-shadow: 5px 5px 7px grey; font-size: 30px; width:100%; border:none; font-weight: bold; background: #F1F7ED;}
+
+.link{text-decoration:none; color: #339966;}
+
+.song{transition: filter 0.5s ease; }
+.song:hover { filter: drop-shadow(10px 10px 10px grey);} 
+
+.tooltips2{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:30px;
+ font-weight:normal;
+ cursor:pointer;
+ 
+}
+.tooltips2 .tooltipstext2{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:10px;
+ width:500px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:25px;
+ font-weight:normal;
+ padding: 10px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: left;
+ 
+}
+.tooltips2:hover .tooltipstext2{  visibility: visible;}
+
+
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:40px;
+ font-weight:bold;
+ cursor:pointer;
+ color: black;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:10;
+ left:350px;
+ width:600px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:30px;
+ font-weight:normal;
+ padding: 20px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: left;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+.p{text-align: center; font-size: 33px;}
+.p1 {font-size: 30px; color: black;}
+
+.div1 {display: grid; grid-template-columns: 900px; justify-content: center; margin-top: 20px; cursor:pointer;}
+.div2 {display: grid; grid-template-columns: 1fr 1fr;}
+.div3 {display: grid; grid-template-columns:1fr 1fr 1fr ;}
+.div4 {display: grid; grid-template-columns:1fr 400px ;}
+.div5 {display:grid; grid-template-columns: 1fr 1fr 1fr 1fr;}
+.div6 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;}
+.div7 {text-align: center; font-size: 40px;}
+.div8 {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+.div10 {display: grid; grid-template-columns: 400px 1fr;}
+
+.convo{text-align:left; box-shadow: 1px 0 3px grey; border-radius: 3px; padding:10px; margin-bottom:5px;}
+
+.video{width:800px; border-radius:5px;}
+.video1{width:450px; border-radius:5px;}
+
+
+.img1{width:500px; border-radius:5px;}
+.img2{width:100px; border-radius:19px;}
+.img3{width:300px; border-radius:20px;}
+.img4{width:200px; border-radius:20px;}
+.img5{width:400px; border-radius:20px;}
+
+.textarea{font-size: 30px; color:purple; border-radius:5px; font-family:new roman; text-align:center;}
+
+
+
+
+@media screen and (max-width: 1000px){
+.p{text-align: center; font-size: 25px;}
+.p1 {font-size: 22px;}
+
+.div1 {display: grid; grid-template-columns: 1fr;}
+.div2 {display: grid; grid-template-columns:1fr;}
+.div3  {display: grid; grid-template-columns:  1fr; font-size: 23px;}
+.div4 {display: grid; grid-template-columns:1fr;}
+.div5 {display: grid; grid-template-columns: 1fr;}
+.div6 {display: grid; grid-template-columns: 1fr;}
+.div7 {text-align: center; font-size: 30px;}
+.div8 {display: grid; grid-template-columns: 1fr ;}
+.wrapper { overflow-x: hidden; width: 100%; background: linear-gradient(45deg, white, #D1E4C4, white);}
+
+.buttons{padding:30px; box-shadow: 5px 5px 7px grey; font-size: 25px; border-radius:5px; border:none; font-weight: bold; width:100%; background: #F1F7ED;}
+
+.video{width:100%;}
+.video1{width:100%;}
+
+.img1{width:100%;}
+.img2{width:100%;}
+.img3{width:100%; border-radius:20px;}
+.img4{width:100%; border-radius:20px;}
+.img5{width:100%; border-radius:20px;}
+
+.textarea{font-size: 30px; color:purple; font-family:new roman; text-align:center; width:100%;}
+
+
+
+.tooltips2{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:30px;
+ font-weight:normal;
+ cursor:pointer;
+ 
+}
+.tooltips2 .tooltipstext2{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:-10px;
+ width:200px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:25px;
+ font-weight:normal;
+ padding: 10px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: left;
+ 
+}
+.tooltips2:hover .tooltipstext2{  visibility: visible;}
+
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:30px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:100;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: hidden;}
+}
+
+<span class="tooltipstext"> </span>
+
+.dropdown{ display: flex; }
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px; z-index:10;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+
+
+
+<div class="wrapper">
+
+<div class="dropdown">
+ <button>Contact Me</button>
+ <div class="content">
+  <a href="mailto: makaremalakhlaaq@gmail.com" target="_blank">Email</a>
+  <a href="https://wa.me/254740284442" target="_blank">WhatsApp</a>
+
+  <a href="https://www.facebook.com/profile.php?id=100092246656320" target="_blank">Facebook</a>
+ </div>
+</div>
+#339966
+</style>
+
+</head>
+<body>
+
+
+<h1 class="tooltips">English Language Teaching Material Development - Vol 2</h1> 
+
+
+<div class="div1" style=" ">
+
+
+<div class="p1" style="text-align: left; background-color: #F1F7ED;  padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+Abstract<br><br>
+The goal of language programs is to utilize language for effective communication. Due to the needs,
+interests, and motivations of language learners, they may show individual differences in their language learning. <br><br>
+
+Materials used in language programs can be instructional, experiential, elucidative,
+or exploratory in that they can inform learners about the language, provide experience of the language in use, and help learners to make discoveries about the language for themselves. <br><br>
+
+Material development is both a field of study and a practical undertaking. At the theoretical level, the principles
+of the design, implementation, and evaluation of ELT materials will be emphasized. <br><br>
+
+At the practical
+level, the production, evaluation, and adaptation of ELT materials, by teachers or material writers would be taken in to account. <br><br>
+
+The present study investigated the goals of language teaching programs
+in some countries, and discussed the contextual factors affecting the processes of ELT material development explicitly. <br><br>
+
+The discussion of the three phases of ELT material development; namely, the organization and analysis, evaluation, and adaptation of materials has been thoroughly elaborated throughout the present study. <br><br>
+
+The ELT profession nowadays has a range of different types of syllabus available from which a choice should be made for a specific situation.<br><br> 
+
+Having analyzed the material available, the ELT material developers should evaluate them both externally and internally to
+select the most appropriate materials. <br><br>
+
+Finally, materials should be adapted to different learners in different settings following some adaptation principles. To this end, a framework for adaptation has
+been introduced at the end.<br><br>
+
+Keywords: ELT materials, ELT material development, Language programs <br><br>
+
+INTRODUCTION<br><br>
+"Materials" 'include anything which can be used to facilitate the learning of a language. They can be linguistic, visual, auditory or kinesthetic, and they can be presented in print, through live performance or display, or on cassette, CD-ROM, DVD or the Internet'(Tomlinson,2001:66). <br><br>
+
+They can be instructional, experiential, elucidative, or exploratory, in that they can inform learners about the language , they can provide experience of the language in use, they can stimulate language use or they can help learners to make discoveries about the language for themselves.<br><br>
+
+Material development is both a field of study and a practical undertaking. As a field it studies the principles and procedures of the design, implementation and evaluation of language teaching materials.<br><br> 
+
+As a practical undertaking it involves the production, evaluation and adaptation of language teaching materials, by teachers for their own classrooms and by materials writers for sale or distribution. <br><br>
+
+
+Ideally these two aspects of materials developments are interactive in that the theoretical studies inform and are informed by the
+development and use of classroom materials.<br><br>
+
+Goals of Language Programs<br><br>
+
+
+The overall goals of a language teaching program usually derive from an analysis of the reasons why a group of learners in a particular environment needs to learn English. <br><br>
+
+These goals may be stated in general, educational, or very specific
+terms. On the one hand, they may be set out in the large-scale categories of a national language policy with many associated implications for the
+development of the curriculum. <br><br>
+
+The aim of English Language Teaching in Malaysia, for instance, is 'to create a society that is able to utilize the language for effective communication as the need arises, and as a key to wider experiences.<br><br>
+
+
+For those furthering their studies, the skills learned should become an instrument with which they may cope with the necessities of using the
+language'(Kementerian,1979). <br><br>
+
+Alternatively, a course may be organized to address a particular
+learning need for ,say, the identifiable professional purposes of a small group. <br><br>
+
+Sandler and Stott (1981), for example, claim that the aims of their course in English for Management are to meet the needs of ' practicing managers in industry and commerce who, for a variety of reasons,
+need to improve their performance in English.<br><br>
+
+
+Secondly, for business studies students and management trainees who are studying for an examination in English or who are expected … to attain
+a level of proficiency in English.'<br><br>
+
+
+There is , then, a whole spectrum of possibilities for defining the goals of language teaching, for a country, an age group, a whole school, a
+class, or an individual, and whether for general educational purposes, business, scientific development, cultural appreciation or many other reasons. <br><br>
+
+
+Contextual Factors<br><br>
+
+Whether goals are stated in terms of a national
+language policy, or in the more restricted environment of a particular school or college, the possibilities for actually implementing them will be directly related both to the learners themselves – their needs, characteristics and so on- and to the whole educational setting in which the teaching is to take place. <br><br>
+
+The statement of goals, then, related to the learners and conditioned by the setting, leads to the selection of an appropriate type of syllabus
+content and specification. <br><br>
+
+The broad syllabus outline will in turn have direct implications for the
+more detailed design and selection of materials and tests, the planning of individual lessons, and the management of the classroom itself.<br><br>
+
+
+We can list here the key characteristics of the "learner", indicating how they might affect planning. Some of these are characteristics of whole
+groups or subgroups of learners, others are individual and less open to generalization. Following Stern(1983), they must be seen as interrelated.<br><br>
+
+
+-age: this will particularly affect topics chosen
+and types of learning activity,
+such as the suitability of games or role-play.<br><br>
+
+
+-interest: as with age, this may help in the
+specification of topics and learning activities.<br><br>
+
+
+-level of proficiency in English: teachers will
+wish to know this even where their classes are
+based on a 'mixed proficiency' principle rather
+than streamed according to level.<br><br>
+
+
+-aptitude: this can most carefully be thought of as a specific talent, in this case for language learning, as something that learners might show
+themselves to be 'good at', perhaps in contrast to other subjects in a school curriculum.<br><br>
+
+
+-mother tongue: this may affect, for instance, the treatment of errors or the selection of syllabus items-areas of grammar or vocabulary and so on.<br><br>
+
+
+-academic and educational level: which help to determine intellectual content, breadth of topic choice, or depth to which material may be studied.<br><br>
+
+
+
+-attitudes to learning, This is directly related to teachers, to the institution, to the target language itself and to its speakers.<br><br>
+
+-motivation, at least insofar as it can be anticipated. Obviously a whole range of factors will affect this.<br><br>
+
+
+-reasons for learning, if it is possible to state them. With school age pupils this may be less significant than with many adult learners, where it is often possible to carry out quite a detailed analysis of needs.<br><br>
+
+
+-Preferred learning styles: which will help in the evaluation of the suitability of different methods, for instance whether problemsolving activities could be used, or whether pupils are more used to 'rote learning', where material is learned by heart.<br><br>
+
+
+-personality: which can affect methodological choices such as a willing for the acceptance of role play and an interactive classroom environment, or a preference for studying alone, for example.<br><br>
+
+
+For most EFL/ESL teachers, the following factors, in some combination and with varying degrees of significance, will influence course planning, syllabus design, the selection of materials and resources, and the appropriateness of methods:<br><br>
+
+
+-the role of English in the country: whether it is a regular means of communication or primarily a subject taught in the school curriculum, where ,in turn, it may or may not be the first foreign language. This relates to the linguistic environment, and to whether English is spoken in the community outside class or alternatively never heard.<br><br>
+
+
+-the role of English in the school ,and its place in the curriculum.<br><br>
+
+
+-the teachers: their status, both at national and institutional levels, their training, mother tongue, attitudes to their job, experience, expectations. <br><br>
+
+
+-management and administration: who is responsible for what level of decision, particularly which are the control points for employment of staff, budgets, resource allocation and so on. Also, the position of teachers in the overall system needs to be understood.<br><br>
+
+
+-resources available: books and paper, audio-visual materials(hardware and software for cassette and video), laboratories, computers, and so on. Design and choice of teaching materials will be particularly affected by resource availability, as will the capacity to teach effectively across a range of language skills.<br><br>
+
+
+-support personnel: administrators, secretaries and technicians, and their specific roles in relation to the teaching staff.<br><br>
+
+
+-the number of pupils to be taught and the size of classes. Overall numbers may affect the total number of teaching hours available, and the large class problem is a very familiar one in many settings worldwide.<br><br>
+
+-time available for the program, both over a working year(longitudinally), and in any one week or term (intensive or extensive). Many teachers would also consider that time of day is a significant factor.<br><br>
+
+
+-physical environment: the nature of the building, noise factors, flexibility of tables and chairs, size of room in relation to size of class, heat and cold, and so on.<br><br>
+
+
+-the socio-cultural environment: this can often determine the suitability of both materials and methods. For example, some textbooks contain
+topics which are inappropriate to the setting, and some classroom methods require an unacceptable set of teacher and learner roles.<br><br>
+
+
+-the types of tests used, and ways in which students are evaluated: assessment procedures may , for example, be formal or informal and
+subjective. They may also be external, in the form of a public or national examination, or internal to the institution and the course. <br><br>
+
+-procedures(if any) for monitoring and evaluating the language teaching program itself. This kind of evaluation may be imposed by 'senior management', or alternatively agreed between teachers as colleagues.<br><br>
+
+
+Malamah-Thomas(1987:97) describes setting in terms of three levels in an education system: the country, the school, and the classroom. She then divides the various factors into<br><br>
+(a) physical <br>
+(b) temporal <br>
+(c) psycho-social and<br>
+(d) educational, <br>
+showing how the three different levels may be affected by each of these. <br><br>
+
+Thus, for example, psycho-social factors are related at national level to culture, politics and religion; at institutional level to school atmosphere and staff attitudes; and in the classroom to student-teacher rapport.<br><br>
+
+
+I. Organization and Coverage of the Syllabus<br><br>
+
+We can now assume that the goals of an English language program have been set out and that the contextual factors affecting its implementation have been established and understood. <br><br>
+
+The next step in the task of planning is to select a type of syllabus which is relevant to the learners for whom it is intended, appropriate to the situation, and which fulfils the aims as closely as possible.<br><br>
+
+
+The 'syllabus' can be seen for our purposes as the overall organizing principle for what is to be taught and learned. <br><br>
+
+Richards and Rodgers(1986) have proposed a useful framework for the comparison of language teaching methods which illustrates the place of the syllabus in program planning. <br><br>
+
+Their model has three distinct levels, which they term approach, design, and procedure, and is intended to show the relationship between the theory and practice of language teaching as an 'interdependent system'. <br><br>
+
+Briefly, 'approach' is the most general level, and refers to the views and beliefs <br> or theories- of language and language learning on which planning is based. <br><br>
+
+The next level, 'design' is where the principles of the first level are converted into the more practical aspects of syllabuses and instructional materials.<br><br> 
+
+It is here that decisions are taken about the arrangement of content to be taught and learnt, the choice of topics, language items to be included in the program, and so on.<br><br> 
+
+
+Finally, 'procedure' refers to techniques and the management of the classroom itself.<br><br> 
+
+
+The ELT profession nowadays has available a range of different types of syllabus from which a choice will be made for a specific situation. <br><br> 
+
+Although our teaching contexts are diverse, our courses will be based on one, or a combination of, these principles of organization. <br><br> 
+
+Therefore, one of the simplest ways of surveying the types of syllabus available is to examine the content pages of published English language teaching textbooks, because they reveal the underlying principles and assumptions on which the writers have based their material. <br><br> 
+
+At the same time, they tell us something both about the approach and the 
+design adopted, thus bringing together principle and practice in a directly observable way.<br><br> 
+
+
+We can now identify five broad types of syllabus: <br><br> 
+
+1. Grammatical or structural, <br> 
+2. Functional-notional,<br> 
+3. Situational, <br> 
+4. Skills-based, <br> 
+5. Topic-based. <br><br> 
+
+
+The first of these obviously is organized according to a set of grammatical structures, and is one that will easily recognized by most English language teachers. <br><br> 
+
+The second is based on the communicative and interpersonal uses to which
+language is put and, in contrast to the formal structural system of the first type, highlights what people do through language. It is normally referred to as a 'functional' syllabus . This design principle is often found together with the other list of items in the same box: they are technically called 'notions', a term used to describe the rather
+general and abstract categories which a language is able to express, such as concepts of time and place. <br><br> 
+
+The third type presents a set of everyday situations or settings. <br><br> 
+
+The fourth focuses on language skills, and is concerned with what learners do as speakers, listeners, readers, writers. <br><br> 
+
+The fifth uses topics or themes as its starting points. Our professional activities as language teachers are not carried out in a vacuum and , in Richards'(1985:11) words, 'Planning a successful language program involves consideration of factors that go well beyond mere content and presentation of teaching materials'.<br><br> 
+
+Although we work in specific situations with specific groups of learners, according to a specified set of aims, our work can be described along a number of shared and generalizable dimensions. <br><br> 
+
+These dimensions are:the characteristics of learners; the range of factors in the teaching situation itself; and the syllabus types available to us as a profession. <br><br> 
+
+The differences lie in the relative importance of these factors, and the actual choices that are made.<br><br> 
+
+Several of these approaches come together in the "multi-syllabus framework". Swan justifies this approach in the following terms: 'When deciding what to teach to a particular group of learners, we need to take into consideration several different meaning categories and several different formal categories. <br><br> 
+
+We must make sure that our students are taught to operate key functions….to talk about basic notions…….to communicate appropriately in specific situations …..to discuss the topics which correspond to
+their main interests and needs….At the same time, we shall need to draw up a list of phonological problems ….of high priority structures, and
+of the vocabulary which our students will need to learn. <br><br> 
+
+In addition, we will need a syllabus of skills….' (1985:79).<br><br> 
+
+
+
+II. Evaluating ELT Materials<br><br> 
+
+
+The ability to evaluate teaching materials effectively is a very important professional activity for all EFL teachers. <br><br> 
+
+Cunningsworth(1984) suggests that there are very few teachers who do not use published course materials at some stage in their teaching career. <br><br> 
+
+Many language teachers find that it is something that they do very regularly in their professional lives.<br><br> 
+
+We may make a distinction between teaching situations where 'open-market'
+materials are chosen on the one hand, and where a Ministry of Education produces materials which are subsequently passed on to the teachers
+for classroom use on the other.<br><br> 
+
+
+The nature of the evaluation process in each of these scenarios will probably differ as well. <br><br> 
+
+In the first type of situation, teachers may have quite a large amount of choice in the materials they select. <br><br> 
+
+However, there are many situations where
+teachers in fact get a very limited choice or perhaps no choice at all, and this second scenario may well obtain for teachers who are 'handed'
+materials by a Ministry or a Director and have to cope as best they can within this framework. <br><br> 
+
+For the vast majority of teachers working in the first situation , having a good deal of choice in the selection of appropriate materials, writing their own materials can be very time consuming and not necessarily cost-effective; hence there is a need to be able to discriminate effectively between all the course books on the market.<br><br> 
+
+
+Another fairly typical factor to consider is that teachers/course organizers are often under considerable professional and financial pressure to select a course book for an ELT program which will then become the textbook maybe for years to come. <br><br> 
+
+
+Added to this pressure is the fact that in many contexts materials are often seen as being the core of a particular program and are often the most visible representation of what happens in the classroom. <br><br> 
+
+Even though some practitioners may take issue with O'Neill's comment that 'no other medium is as easy to use as a book',(1982:107), the reality for many is that the book may be the only choice open to them. <br><br> 
+
+
+For some teachers the selection of a good textbook can be valuable. <br><br> 
+
+No textbook or set materials is likely to be perfect and even though ' it is clear that course book assessment is fundamentally a subjective, rule-of-thumb activity, and no neat formula , grid or system will ever provide a definite yardstick' (Sheldon,1988:245).<br><br> 
+
+
+It is useful for us as teachers to perform an external evaluation of materials first of all in order to gain an overview of the organizational principles involved. <br><br> 
+
+After this we move on to a detailed internal evaluation of the materials to see how far the materials in question match up to what the author claims as well as to the aims and objectives of a given teaching program.<br><br> 
+
+
+The External Evaluation<br><br>
+
+
+An external evaluation offers a brief overview of the materials from the outside (cover, introduction, table of contents), which is then followed by a closer and more detailed internal evaluation.<br><br>
+
+
+First, we try to provide a comprehensive, external overview of how the materials have been organized. Our aim is basically that of examining the
+organization of the materials as stated explicitly by the author/ publisher by looking at: the 'blurb', or the claims made on the cover of the teachers/students book, and the introduction and table of contents. <br><br>
+
+We need to know who the materials are targeted at (the intended audience), what level they are (the proficiency level), the context in
+which the materials are to be used, and how the language has been presented and organized into teachable units/lessons. <br><br>
+
+
+There are also many other factors which are to be taken into account
+at this external stage as follows:<br><br>
+
+
+-Are the materials to be used as the main 'core'
+course or to be supplementary to it?<br><br>
+
+- Is a teacher's book in print and locally available?<br><br>
+
+-Is a vocabulary list/index included?<br><br>
+
+-What visual material does the book contain(photographs, charts, diagrams)<br>
+ and is it there for cosmetic value only or is it actually integrated into the text?<br><br>
+
+-Is the layout and presentation clear or cluttered?<br><br>
+
+-Is the material too culturally biased or specific?<br><br>
+
+-Do the materials represent minority groups and/or women in a negative way? Do they present a ' balanced' picture of a particular country/society?<br><br>
+
+
+It is possible that the content of some materials will cause offence to some learners. The investigation by Littlejohn and Windeatt(1988)
+into teaching materials shows how textbooks may be biased in subtle, and in some cases not so subtle, ways in their representation of class,
+ethnic background and reference to smoking and drinking. <br><br>
+
+-The inclusion of audio/video material and resultant cost. Is it essential to possess this extra material in order to use the textbook
+successfully?<br><br>
+
+
+-The inclusion of tests in the teaching materials (diagnostic, progress, achievement); would they be useful for your particular learners? <br><br>
+
+
+During this external evaluation stage , we have examined the claims made for the materials by the author/publisher with respect to : the intended audience, the proficiency level, the context and presentation of language items, whether the materials are to be core or supplementary, the role and availability of a teacher's book, the inclusion of a vocabulary list/index, the table of contents, the use of visuals and presentation, the cultural specificity of the materials, the provision of audio/video material and inclusion of tests.<br><br>
+
+
+
+After completing this external evaluation, we can arrive at a decision as to the materials' appropriacy for selection purposes. <br><br>
+
+
+If our evaluation shows the materials to be potentially appropriate and worthy of a more detailed inspection then we can continue with our internal or more detailed evaluation. If not, then we can exit at this stage and start to evaluate other materials if we wish so. <br><br>
+
+Macro-evaluation----------<br>
+inappropriate/potentially appropriate------------- (external)<br><br>
+
+micro-evaluation----------<br>
+inappropriate/appropriate----------adopt/select (internal)<br><br><br>
+
+
+The Internal Evaluation<br><br>
+
+
+We now continue to the next stage of our evaluation procedure by performing an in-depth investigation into the materials. <br><br>
+
+The essential issue at this stage is for us to analyze the extent to which the factors in the external evaluation stage actually match up with the internal consistency and organization of the materials as stated by the author/publisher. <br><br>
+
+In order to perform an effective internal inspection of materials, we need to examine at least two units or more of a book or set of materials to investigate the following factors:<br><br>
+
+
+-The presentation of the skills in the materials<br><br>
+-The grading and sequencing of the materials<br><br>
+-Where reading/discourse skills are involved,
+is there much in the way of appropriate text
+beyond the sentence?<br><br>
+-Where listening skills are involved, are recordings 'authentic' or artificial?<br><br>
+-Do speaking materials incorporate what we
+know about the nature of real interaction or
+are artificial dialogues offered instead?<br><br>
+-The relationship of tests and exercises to <br>
+(a) learner needs and <br>
+(b) what is taught by the course material.<br><br>
+-Do you feel that the material is suitable for different learning styles; is a claim and provision made for self-study and is such a claim justified?<br><br>
+
+
+-Are the materials sufficiently 'transparent' to motivate both students and teachers alike, or would you foresee a student/teacher mismatch?<br><br>
+
+
+In the internal evaluation stage we have to consider that as evaluators we need to examine the following criteria: the treatment and presentation of the skills, the sequencing and grading of the materials, the type of reading, listening, speaking and writing materials contained in the
+materials, appropriacy of tests and exercises, selfstudy provision and teacher-learner 'balance' in use of the materials.<br><br>
+
+
+The Overall Evaluation<br><br>
+
+
+At this stage ,we hope that we may now make an overall assessment as to the suitability of the materials by considering the following parameters:<br><br>
+
+
+1. The usability factor. <br>
+How far the materials could be integrated into a particular syllabus as 'core' or supplementary. For example, we may need to select materials which suit a particular syllabus or set of objectives that we have to work to. The materials may or may not be able to do this.<br><br>
+
+
+2. The generalizability factor. <br>
+Is there a restricted use of 'core' features which make the materials more generally useful? It may be that not all the material will be useful for a given individual or group but some parts might be.<br><br>
+
+
+3. The adaptability factor. <br>
+Can parts be added/extracted/used in another context or modified for local circumstances? There may be some very good qualities in the materials but, for example, we may judge the listening material or the reading passages to be unsuitable and in need of modification. If we think that adaptation is feasible we may choose to do
+this. <br><br>
+
+
+4. The flexibility factor. <br>
+How rigid is the sequencing and grading; can the materials be entered at different points/used in different ways? In some cases materials which are not so steeply graded offer a measure of flexibility which permits them to be integrated easily into various types of syllabus.<br><br>
+
+
+Thus, when all the criteria have been analyzed we can then reach our own conclusions regarding the suitability of the materials for specified
+groups or individuals. <br><br>
+
+But, once materials have been appropriate for use on a particular course
+we must keep in mind that their ultimate success or failure can only be determined after trying them in the classroom with real learners.<br><br>
+
+
+III. Adapting ELT Materials<br><br>
+
+
+There are some factors which should be considered in the process of adapting teaching materials within particular classroom environments where there is a perceived need for change and manipulation of certain design features. <br><br>
+
+There is clearly a direct relationship between evaluating and adapting materials, both in terms of the reasons for doing so, and the criteria used. <br><br>
+
+A starting point for considering the relationship between evaluation and adaptation is to think of the terms 'adopting' and 'adapting'. <br><br>
+
+We know that a decision about whether a certain course book should be used in a specific teaching situation can be taken on the basis of a number of evaluative criteria. These criteria, formulated as a set of questions to ask about the materials, provide answers that will lead to acceptance or perhaps rejection.<br><br>
+
+
+However, a decision in favor of adoption is an initial step, and is unlikely to mean that no further action needs to be taken beyond that of presenting the material directly to the learners. <br><br>
+
+
+It is more realistic to assume that, however careful the design of the materials and the evaluation process, some changes will have to be made at some level in most teaching contexts. Adaptation, then, is a process subsequent to, and dependent on, adoption. <br><br>
+
+Furthermore, whereas adoption is concerned with whole course books, adaptation concerns the parts that make up the whole.<br><br>
+
+
+An important perspective on evaluation is to see it as a management issue whereby educational decision-makers formulate policy and work out strategies for budgeting and for purchasing and allocation of resources.<br><br>
+
+In this sense, teachers do not always have direct involvement. So, activity among teachers is that of adaptation since they are changing and adjusting the various parts of a course book and they are more closely related to the reality of dealing with learners in the dynamic
+environment of the classroom.<br><br>
+
+
+External factors comprise both the overt claims about materials and the characteristics of particular teaching situations. <br><br>
+Internal factors are concerned with content, organization and consistency. Thus :<br><br>
+
+<img src="1.jpg"><br><br>
+
+To adapt materials is to try to bring together these individual elements under each heading, or combinations of them, so that they match each
+other as closely as possible. <br><br>
+
+Madsen and Bowen (1978) refer to this matching as the principle of 'congruence': Effective adaptation is a matter of achieving "congruence"….The good teacher is….<br><br>
+
+
+constantly striving for congruence among several related variables: teaching materials, methodology, students, course objectives, the target language, and its context, and the teacher's own personality and teaching style. With an emphasis on materials, Stevick (1972) talks of bridging a gap:<br><br>
+
+'the teacher must satisfy the demands of the textbook, but in ways that will be satisfying to those who learn from it'. It is worth mentioning that adapted material does not necessarily need to be
+written down or made permanent. <br><br>
+
+While satisfying students 'short-term needs, teachers may need
+to introduce extra material. <br><br>
+
+Madsen and Bowen (1978) make the point clearly:' the good teacher is
+constantly adapting. He adapts when he adds an example not found in the book or he adapts even when he refers to an exercise covered earlier, or
+when he introduces a supplementary picture. Therefore, adaptation is essentially a process of matching.<br><br>
+
+
+Its purpose is to maximize the appropriacy of teaching materials in context, by changing some of the internal characteristics of a course book to better suit our particular circumstances.<br><br>
+
+
+The Reasons for Adapting <br><br>
+
+
+There are many reasons for making modifications to our materials; these reasons depend on the whole range of variables operating in our own
+teaching situation, and one teacher’s priorities may differ from those of another. <br><br>
+
+Some think that materials should aim to be 'communicative' and 'authentic'.<br><br> 
+
+However, these priorities are relative, and there is no absolute notion of right or wrong, also, priorities change over time even within the
+same context. Nor does a need to adapt necessarily imply that a course book is defective.<br><br>
+
+
+It will be useful to state a list to show some of the possible areas of mismatch(no congruence) that teachers identify and that can be dealt with by adapting.<br><br>
+
+
+-Not enough grammar coverage in general<br><br>
+
+-Not enough practice of grammar points of particular difficulty to these learners<br><br>
+-The communicative focus means that grammar is presented unsystematically<br><br>
+
+-Reading passages contain too much unknown vocabulary<br><br>
+
+-Comprehension questions are too easy, because the answers can be lifted directly from the text with no real understanding<br><br>
+
+-Listening passages are inauthentic, because they sound too much like written material being read aloud<br><br>
+
+-Not enough guidance on pronunciation<br><br>
+
+-Subject-matter inappropriate for learners of this age and intelligence level<br><br>
+
+-Photographs and other illustrative materials not culturally acceptable<br><br>
+
+-Amount of material too great/too little to cover in the time allocated to lessons<br><br>
+
+-No guidance for teachers on handling group work and role play activities with a large class<br><br>
+
+-Dialogs too formal, and not really representative of everyday speech<br><br>
+
+-Audio material difficult to use because of problems to do with room size and technical equipment<br><br>
+
+-Too much or too little variety in the activities<br><br>
+
+-Vocabulary list and a key to the exercises would be helpful<br><br>
+
+-Accompanying tests needed<br><br>
+
+
+Undoubtedly much more could be added to this list, but it must serve as an illustration of some of the possibilities. <br><br>
+
+All aspects of the language classroom can be covered: these examples
+above include:<br><br> 
+(a) aspects of language use ,<br>
+(b) skills, <br>
+(c) classroom organization and <br>
+(d) supplementary material.<br><br>
+
+
+Principles and Procedures<br><br>
+
+
+The reasons for adapting that we have discussed can be thought of as dealing with the modification of content, whether that content is expressed in the form of exercises and activities; texts; instructions; tests and so on. <br><br>
+
+We should consider the requirements of a particular teaching environment which need a number of changes that will lead to greater appropriacy. <br><br>
+
+This is most likely to be expressed in terms of a need to personalize, individualize, or localize the content.<br><br>
+
+
+We take ' personalizing' here to refer to increasing the relevance of content in relation to learners' interests and their academic, educational, or professional needs. <br><br>
+
+'Individualizing' will address the learning styles both of individuals and of the members of a class working closely together.<br><br>
+
+"Localizing" takes into account the international geography of English language teaching and recognizes that what may work well in Mexico City may not do so in Edinburgh or in Kuala Lumpur. <br><br>
+
+Madsen and Bowen(1978) include a further category of 'modernizing', and comment that not all materials show familiarity with aspects of current English usage, sometimes to the point of being not only out of date or misleading but even incorrect.<br><br>
+
+Regarding the main techniques that can be applied to content in order to bring about change, there are some points to keep in mind.<br><br>
+
+Firstly, this can be seen as another kind of matching process where techniques are selected according to the aspect of the materials that need alteration.<br><br>
+
+Secondly , content can be adapted using a range of techniques; or conversely, a single technique can be applied to different content areas.<br><br>
+
+Thirdly, adaptation can have both quantitative and qualitative effects. That is, we can simply change the amount of material, or we can change its methodological nature. <br><br>
+
+Finally, techniques can be used individually or in combination with others, so the scale of possibilities clearly ranges from straightforward to rather complex. <br><br>
+
+The techniques we use are as follows:<br><br>
+Adding, including expanding and extending<br>
+Deleting, including subtracting and abridging<br>
+Modifying, including re-writing and restructuring<br>
+Simplifying<br>
+Re-ordering<br><br>
+
+
+1. Adding: It can be in two forms; namely, extending whereby we can add in a simple quantitative way, and expanding, which brings about a qualitative as well as a quantitative change.<br><br>
+
+
+2. Deleting or omitting: This is the same as addition, but it does not have a significant impact on the overall methodology. The changes are greater if material is not only subtracted , but also what we shall term
+abridged.<br><br>
+
+Addition and deletion often work together.<br>
+Material may be taken out and then replaced with something else. Where the same kind of material is substituted, as for instance one set of minimal pairs for another, the internal balance of the lesson or the syllabus is not necessarily altered. <br><br>
+
+The methodological change is greater when, for example, grammar practice is substituted after the omission of an inappropriate communicative
+function, or when a reading text is replaced by a listening passage. <br><br>
+
+3. Modifying: It can be applied to any aspect of 'content'. It can be subdivided under two related headings: re-writing, when some of the linguistic content needs modification; and restructuring, which applies to classroom management. Modifying materials, then, even in the restricted sense is a technique that has a very wide range of applications. It refers essentially to a 'modality change’, to a change in the nature or focus of an exercise, or text, or classroom activity.<br><br>
+
+
+4. Simplifying: Many elements of a language
+course can be simplified, including the instructions and explanations that accompany exercises and activities, and even the visual layout of material so that it becomes easier to see how different parts fit together. The main application of this technique has been to texts,
+most often to reading passages. For instance, we can simplify according to: sentence structure, lexical content and grammatical structures.<br><br>
+
+
+5. Re-ordering: It refers to the possibility of putting the parts of a course book in a different order. This may mean adjusting the sequence of presentation within a unit, or taking units in a different sequence from that originally intended. There are limits, of course, to the scale of what teachers can do, and too many changes could result, unhelpfully, in an almost complete re-working of a course book.<br><br>
+
+
+A Framework for Adaptation<br><br>
+
+
+Adapting materials is trying to consider individual items or combination of them in such a way that they could match each other as much as possible. <br><br>
+
+This math or congruence should be among several related criteria namely external and internal, such as teaching materials, methodology, student characteristics, course objectives, teacher variables, target language, and its context. <br><br>
+
+There is a need to localize, personalize, and individualize the material to bridge a gap (Stevick, 1972).<br><br>
+
+The teacher must satisfy the demands of the textbook as to satisfy the needs of the students by means of different techniques such as adding,
+modifying, reordering, simplifying, and deleting.<br><br>
+
+
+The purpose of applying these techniques to content areas such as language use, texts, skills, and classroom management is to maximize the appropriacy of teaching materials in context. <br><br>
+
+The following is a workable model into which the main points of adaptation can be fitted:<br><br>
+
+<img src="2.jpg"><br><br>
+
+Conclusion<br><br>
+
+In the first part of this paper the organization of syllabus and the contextual factors were investigated. In the second part, we suggested that materials evaluation can be carried out in two complementary stages ;namely, external and internal.<br><br>
+
+
+We also suggested that materials evaluation is one part of a complex process and that materials once selected can only be judged successful after classroom implementation and feedback. <br><br>
+
+In the third part of this paper, adapting ELT materials
+was discussed. <br><br>
+
+Adaptation is a very practical activity which is carried out mainly by teachers in order to make their work more relevant to the
+learners with whom they are in day-to-day contact. <br><br>
+
+It is not just an exercise done in selfcontained methodological isolation. Like all our activity as teachers, it is related, directly and indirectly, to a wider range of professional concerns.<br><br>
+
+Adaptation is linked to issues of administration and the whole management of education, insofar as it derives from decisions taken about materials
+to be adopted. <br><br>
+
+Also, the need to adapt is one consequence of the setting of objectives in a certain educational context. Finally, adaptation can only be carried out effectively if it develops from an understanding of the possible design features of syllabuses and materials.<br><br>
+
+
+
+
+
+
+
+
+<b></b>
+<div></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+<script>
+<div style="text-align: center; margin-bottom: 10px;">
+<video src="Appleandhisfriends.mp4" controls="" muted class="video"></video>
+</div>
+  var sound1 = new Audio();
+  sound1.src = "spectacles.mp3";
+</script>
+</body>
+</html>
